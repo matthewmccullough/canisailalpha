@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             // Populate the NOAA Station data
-            LiveStations(client)
+            Stations(client)
         }
     }
 
