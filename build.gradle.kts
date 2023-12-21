@@ -1,7 +1,7 @@
 plugins {
-    id("com.android.application")  version "7.2.2"
-    kotlin("android")              version "1.7.10"
-    kotlin("plugin.serialization") version "1.7.10"
+    id("com.android.application")  version "8.2.0"
+    kotlin("android")              version "1.9.21"
+    kotlin("plugin.serialization") version "1.9.21"
 }
 
 java {
@@ -16,8 +16,8 @@ repositories {
 }
 
 val ktorVersion = "2.0.3"
-val composeVersion = "1.2.1"
-val composeCompilerVersion = "1.3.0"
+val composeVersion = "1.5.4"
+val composeCompilerVersion = "1.5.7"
 
 dependencies {
     implementation(kotlin("stdlib"))
@@ -28,8 +28,8 @@ dependencies {
     implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
 
-    implementation("androidx.appcompat:appcompat:1.5.0")
-    implementation("androidx.activity:activity-compose:1.5.1")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.activity:activity-compose:1.8.2")
     implementation("androidx.compose.foundation:foundation-layout:$composeVersion")
     implementation("androidx.compose.material:material:$composeVersion")
     implementation("androidx.compose.runtime:runtime:$composeVersion")
@@ -40,10 +40,10 @@ dependencies {
 
 android {
     namespace = "com.matthewjmccullough.canisailalpha"
-    compileSdk = 32
+    compileSdk = 34
 
     defaultConfig {
-        minSdk = 28
+        minSdk = 33
     }
 
     buildFeatures {
