@@ -25,8 +25,8 @@ var theMutableStation = mutableStateOf(NOAAStation())
 var theHttpClient: HttpClient = HttpClient()
 
 @Composable
-fun StationComposable(noaaStation: NOAAStation) {
-    Column(Modifier.fillMaxWidth().fillMaxHeight().padding(10.dp), Arrangement.Top) {
+private fun StationComposable(noaaStation: NOAAStation) {
+    Column(Modifier.fillMaxWidth().fillMaxHeight().padding(50.dp), Arrangement.Top) {
         Text("Location: " + noaaStation.metadata.name)
         Text("Last updated: " + noaaStation.data[0].t)
         Text("Water Level: " + noaaStation.data[0].v.toString())
