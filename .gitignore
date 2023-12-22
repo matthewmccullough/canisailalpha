@@ -9,3 +9,7 @@ xcuserdata/
 /iosApp/Kotlin-Bars-Info.plist
 /iosApp/private_keys/
 /iosApp/Kotlin_Bars.xcodeproj/project.xcworkspace/
+/java_pid*
+/keystores/*
+/release/*.aab
+/debug/*.aab
