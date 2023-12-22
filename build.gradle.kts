@@ -44,6 +44,8 @@ android {
 
     defaultConfig {
         minSdk = 33
+        versionCode = 1
+        versionName = "1.0-alpha"
     }
 
     buildFeatures {
@@ -52,5 +54,10 @@ android {
 
     composeOptions {
         kotlinCompilerExtensionVersion = composeCompilerVersion
+    }
+    buildTypes {
+        getByName("release") {
+            signingConfig = signingConfigs.getByName("debug")
+        }
     }
 }
