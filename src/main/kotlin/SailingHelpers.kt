@@ -1,9 +1,5 @@
 package com.matthewjmccullough.canisailalpha
 
-import io.ktor.client.*
-import io.ktor.client.call.*
-import io.ktor.client.request.*
-
 class SailingHelpers {
     companion object LogicAndHelpers {
         private const val TIDE_LEVEL_REQUIRED_TO_SAIL = 3
